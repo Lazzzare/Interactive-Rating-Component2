@@ -132,6 +132,7 @@ body {
 }
 
 .rating-description {
+  text-align: center;
   font-size: 0.9em;
   width: 100%;
   max-width: 22.5em;
