@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: var(--primary-font);
 }
 
 :root {
@@ -16,4 +20,120 @@
     #232a34 0%,
     #181e27 100%
   );
+  --primary-font: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background: var(--black-gradient);
+  border-radius: 30px;
+
+  width: 100%;
+  max-width: 25em;
+
+  padding: 2em;
+}
+
+.star-icon {
+  background-color: var(--dark-blue);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.title {
+  color: var(--pure-white);
+  margin: 0.7em 0 0.3em 0;
+}
+
+.description {
+  color: var(--light-gray);
+  line-height: 24px;
+  margin-bottom: 1.5em;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.button {
+  background-color: var(--dark-blue);
+  border: none;
+  outline: none;
+
+  text-align: center;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  color: var(--medium-gray);
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--medium-gray);
+  color: var(--pure-white);
+}
+
+.activeButton {
+  background-color: var(--orange) !important;
+  color: var(--pure-white);
+}
+
+.submitButton {
+  background-color: var(--orange);
+  color: var(--pure-white);
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-top: 2.5em;
+  padding: 1em;
+  border-radius: 22.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: var(--pure-white);
+  color: var(--orange);
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rating-title {
+  margin-top: 1.5em;
+}
+
+.rating-badge {
+  padding: 0.6em 1.75em 0.5em 1.75em;
+  background-color: var(--dark-blue);
+  color: var(--orange);
+  border-radius: 22.5px;
+  margin-top: 2em;
+}
+
+.rating-description {
+  font-size: 0.9em;
+  width: 100%;
+  max-width: 22.5em;
+  margin-bottom: 0;
 }
